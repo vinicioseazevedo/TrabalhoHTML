@@ -1,0 +1,150 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimento nas dimensões totais dos elementos */
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão do corpo */
+    line-height: 1.6; /* Define a altura da linha para facilitar a leitura */
+    color: #333; /* Define a cor do texto */
+    padding-top: 60px;
+}
+
+header {
+    background: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto no cabeçalho */
+    padding: 20px 0; /* Adiciona preenchimento no topo e na base do cabeçalho */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores de lista */
+    display: flex; /* Usa Flexbox para organizar os itens de navegação horizontalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adiciona margem lateral entre os itens da lista */
+}
+
+nav ul li a {
+    color: #fff; /* Define a cor dos links no menu */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+}
+
+/* Estilos para a área principal */
+main {
+    padding: 20px; /* Adiciona preenchimento interno */
+    margin: auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+#H1 {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 20px; /* Adiciona margem superior */
+    margin-bottom: 2.1em; /* Adiciona margem inferior */
+    background-color: #bebdbd; /* Define a cor de fundo do título */
+}
+
+.lis {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte dos itens da lista */
+    font-weight: bolder; /* Define o peso da fonte */
+    font-size: 1.3em; /* Define o tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    list-style-position: inside; /* Faz com que os marcadores da lista apareçam dentro da caixa do conteúdo */
+    line-height: 5.6em; /* Define a altura da linha para espaçamento */
+    color: black; /* Define a cor do texto */
+    margin-top: -2em; /* Ajusta a margem superior */
+}
+
+.lis a {
+    color: black; /* Define a cor dos links na lista */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.lis a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+    color: blue; /* Muda a cor dos links ao passar o mouse */
+}
+
+.titu {
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 3.1em; /* Define o tamanho da fonte */
+    font-family: 'Times New Roman', Times, serif; /* Define a fonte do texto */
+    line-height: 3em; /* Define a altura da linha */
+    color: rgb(32, 32, 172); /* Define a cor do texto */
+}
+
+.H2 {
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 3.1em; /* Define o tamanho da fonte */
+    font-family: 'Times New Roman', Times, serif; /* Define a fonte do texto */
+    line-height: 3em; /* Define a altura da linha */
+    color: rgb(226, 60, 60); /* Define a cor do texto */
+    text-decoration: underline; /* Adiciona sublinhado ao texto */
+}
+
+p {
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.par {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do parágrafo */
+    font-size: 1.5em; /* Define o tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 2em; /* Adiciona margem ao redor do parágrafo */
+}
+
+/* Estilos para imagens */
+.im img {
+    max-width: 100%; /* Faz com que as imagens não ultrapassem a largura do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 15px 0; /* Adiciona preenchimento interno */
+    position: fixed; /* Faz com que o rodapé fique fixo na parte inferior da tela */
+    bottom: 0; /* Alinha o rodapé à parte inferior da tela */
+    width: 100%; /* Faz com que o rodapé ocupe toda a largura da tela */
+}
+
+/* Estilos para formulários */
+form {
+    display: flex; /* Usa Flexbox para organizar os campos do formulário */
+    flex-direction: column; /* Organiza os campos em uma coluna */
+}
+
+form label {
+    margin: 10px 0 5px; /* Adiciona margem ao redor dos rótulos do formulário */
+}
+
+form input, form textarea {
+    padding: 10px; /* Adiciona preenchimento interno aos campos de entrada e área de texto */
+    margin-bottom: 10px; /* Adiciona margem inferior */
+    border: 1px solid #ddd; /* Adiciona uma borda leve */
+}
+
+form button {
+    padding: 10px; /* Adiciona preenchimento interno ao botão */
+    background: #333; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+}
+
+form button:hover {
+    background: #555; /* Muda a cor de fundo do botão ao passar o mouse sobre ele */
+}
